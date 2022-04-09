@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    BookPage
+{% endblock %}
+
+{% block body %}
+<h1>Book: {{ book.title }}</h1>
+        <h3>ISBN code: {{ book.isbn }}</h3>
+        <h3>Author: {{ book.author }}</h3>
+        <h3>Publication year: {{ book.publicationyear }}</h3>
+        <h1>Reviews: </h1>
+        {% for page in review %}
+        <li>{{ page.username }} - [{{ page.score }}]: {{ page.review }}</li>
+    {% else %}
+        <h5>No reviews!</h5>
+    {% endfor %}
+    <h4>GoodReads: average rating:{{ average }}, work rating {{ count }} </h4>
+    <h2>Submit a review: </h2>
+    <h4>Rating(default: 0):</h4>
+    <div class="form-check form-check-inline">
+    <form action="" method="post">
+  
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1">
+        <label class="form-check-label" for="inlineRadio1">1</label>
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2">
+        <label class="form-check-label" for="inlineRadio2">2</label>
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3">
+        <label class="form-check-label" for="inlineRadio3">3</label>
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="4">
+        <label class="form-check-label" for="inlineRadio4">4</label>
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="5">
+        <label class="form-check-label" for="inlineRadio5">5</label>
+   
+        
+        <h4>Text:</h4>
+        <input class="form-control" type="text" name="review" placeholder="Your review">
+        <button class="btn btn-primary">Submit</button>
+
+      </form>
+    </div>
+    
+    {% endblock %}

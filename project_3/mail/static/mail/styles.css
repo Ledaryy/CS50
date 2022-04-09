@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;    
+}
+
+body {
+    padding: 50px;   
+}
+
+textarea {
+    min-height: 400px;
+}
+
+#email-box {
+    border: 1px solid #545454;
+    border-radius: 7px;
+    padding: 5px;
+
+}
+
+#email-view {
+    padding: 10px;
+}
+
+.container {
+    position: relative;
+}
+
+.sender {
+    font-size: 16px;
+    font-weight: bold;
+    top: 1px;
+    left: 1px;
+}
+
+.subject {
+    font-size: 14px;
+}
+
+.timestamp {
+    
+    font-size: 14px;
+    font-weight: bold;
+    right: 5px;
+    bottom: 5px;
+    text-align: right;
+}

@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Ledary's books
+{% endblock %}
+
+{% block body %}
+   
+<form action="" method="post">
+    <h1 style="color: white;">Username</h1>
+    <input class="form-control" type="text" name="username" placeholder="username">
+    <h1 style="color: white;">Password (numbers only)</h1>
+    <input class="form-control" type="password" name="password" placeholder="password">
+    <button class="btn btn-primary">Login</button>
+</form>
+    <a href="{{ url_for('registration') }}">
+        <button class="btn btn-info">Registration</button>
+    </a>
+
+    {% endblock %}

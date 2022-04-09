@@ -1,0 +1,34 @@
+@media screen and (min-width: 900px) {
+
+    html {
+        background-image: url("https://cdn.hipwallpaper.com/i/45/72/p7ITef.jpg")
+    }
+}
+
+table {
+    background-color: grey;
+    margin: 40px;
+}
+
+
+#cat {
+    color: firebrick;
+}
+.memes {
+    background-color: aquamarine;
+}
+
+td {
+    color: wheat;
+
+}
+
+a {
+    color: darkorange;
+    cursor: grab;
+}
+
+
+h1 {
+    color: white;
+}
